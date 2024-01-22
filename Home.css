@@ -1,0 +1,145 @@
+
+#Name
+{
+        color: #081B28;
+        font-size: 3rem;
+        margin-left: 5px;
+        font-weight: 900;
+        font-family: 'arial';
+        text-transform: capitalize;
+        -webkit-text-stroke:2px #0EA5E9;
+      
+}
+#BrandName
+{
+        font-size: 2.5rem;
+        width: fit-content;
+        font-family:'montserrat';
+        font-weight: 700;
+        color: #081B28;
+        -webkit-text-stroke:2px #052a43;
+        position: relative;
+
+}
+#BrandName::before
+{
+        content:attr(data-text);
+        position: absolute;
+        padding-right: 4px;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 0;
+        overflow: hidden;
+        color: #0EA5E9; 
+        -webkit-text-stroke:0px white;
+        border-right: 4px solid #0EA5E9;
+        animation: dragable 6s linear 1s infinite alternate;
+}
+@keyframes dragable {
+        0%, 10% {
+            width: 0%;
+        }
+        50% {
+            width: 50%;
+        }
+        70%{
+                width: 80%;
+        } 
+        90%,100% {
+            width: 100%;
+        }
+    }
+    #secodnbuttonHome:active{
+        color: white;
+        transition: all 0.9s;
+        background: #0e7db0;
+    }
+    #secondbuttonHome::before{
+        content: '';
+        position: absolute;
+        height:0%;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        background: #0EA5E9;
+        z-index: -1;
+}
+#FirstbuttonHome:hover
+{
+        border: 1px solid #0EA5E9;
+        color: #0EA5E9;
+}
+
+#FirstbuttonHome::before
+{
+        content: '';
+        position: absolute;
+        height:100%;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        background: #0EA5E9;
+        z-index: -1;
+}
+#FirstbuttonHome:hover::before
+{
+        animation: Wavevy 2s linear .5s 1 reverse;
+        height: 100%;
+       
+}
+#FirstbuttonHome:active::before{
+        background: transparent;
+        animation: none;
+     
+}
+#secondbuttonHome:hover::before
+{
+       
+        animation:Wavevy 2s linear 0s ;
+        height: 100%;
+}
+#secondbuttonHome:active{
+        color: white;
+}
+#secondbuttonHome:active::before{
+        animation: none;
+     
+}
+@keyframes Wavevy {
+        0% {
+                clip-path: polygon(36% 100%, 54% 100%, 81% 100%, 100% 100%, 100% 100%, 0 100%, 0 100%, 15% 100%);
+        }
+        10% {
+                clip-path: polygon(36% 100%, 56% 97%, 78% 96%, 100% 100%, 99% 99%, 0 100%, 1% 94%, 18% 96%);
+        }
+        20% {
+                clip-path: polygon(37% 95%, 56% 92%, 75% 92%, 90% 95%, 100% 100%, 0 100%, 0 85%, 22% 91%);
+        }
+        30% {
+                clip-path: polygon(37% 95%, 56% 92%, 75% 92%, 90% 95%, 100% 100%, 0 100%, 0 85%, 22% 91%);
+        }
+        40% {
+                clip-path: polygon(53% 73%, 77% 73%, 91% 75%, 100% 79%, 100% 100%, 0 100%, 0 76%, 21% 80%);
+        }
+        50% {
+                clip-path: polygon(44% 68%, 75% 57%, 91% 57%, 100% 51%, 100% 100%, 0 100%, 0 70%, 20% 67%);
+        }
+        60% {
+                clip-path: polygon(39% 55%, 61% 51%, 80% 54%, 100% 48%, 100% 100%, 0 100%, 0 50%, 19% 46%);
+        }
+        70% {
+                clip-path: polygon(39% 45%, 64% 41%, 81% 33%, 100% 30%, 100% 100%, 0 100%, 0 32%, 19% 41%);
+        }
+        80% {
+                clip-path: polygon(41% 23%, 60% 13%, 81% 11%, 100% 18%, 100% 100%, 0 100%, 0 22%, 17% 19%);
+        }
+        90% {
+                clip-path: polygon(36% 8%, 56% 6%, 75% 6%, 100% 10%, 100% 100%, 0 100%, 0 8%, 17% 4%);
+        }
+        100% {
+                clip-path: polygon(37% 0, 57% 0, 75% 0, 100% 0, 100% 100%, 0 100%, 0 0, 17% 0);
+        }
+    }
+    
+    

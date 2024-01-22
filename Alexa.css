@@ -1,0 +1,89 @@
+#boat
+{
+    border: 3px solid white;
+    position: relative;
+    height: 50px;
+    width: 50px;
+    padding: 1rem;
+    border-radius: 100%;
+    background: url("../../Images/Alexa.png") black;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 10px 2px #0EA5E9,-2px -2px 10px 2px #0EA5E9;
+}
+@keyframes circle {
+    0%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: 360deg;
+    }
+}
+@keyframes raidus {
+    0%{
+        box-shadow: 0px 0px 8px 1.5px #0EA5E9,0px 0px 8px 1.5px #0EA5E9;
+    }
+    100%{
+        box-shadow: 2px 2px 30px 8px #0EA5E9,-2px -2px 30px 8px #0EA5E9;
+    }
+}
+form,.Micwrapper{
+    transition: width 2s ease;
+    background: #0f3e5e;
+}
+.token
+{
+    height: 30px;
+    width:30px;
+    border-radius: 100%;
+    overflow:hidden;
+    transition: all 3s ease;
+   
+}
+.token:nth-child(1){
+    background: url("../../Images/Mic.png") #0f3e5e;
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    
+    
+}
+.token:nth-child(2){
+    background: url("../../Images/Chat.png") #0f3e5e;
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+   
+   
+    
+}
+.Mics
+{
+    background: #0f3e5e;
+    height: 45px;
+    width: 55px;
+    padding: 4px;
+
+}
+.Mics:nth-child(1){
+    /* height: 40px; */
+    width: 30px;
+    background: url("../../Images/Mic.png");
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Mics:nth-child(2){
+    /* height: 40px; */
+    width: 30px;
+    background: url("../../Images/Micoff.png");
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Mics:hover
+{
+    border:1px solid silver;
+    /* border-color: red; */
+}

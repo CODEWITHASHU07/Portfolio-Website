@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* #0EA5E9; */
+
+html
+{
+    background: #081B28;
+    --Bg-color:#09111E;
+    --button-color:#0EA5E9;
+    
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "montserrat";
+}

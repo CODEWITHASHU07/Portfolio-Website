@@ -1,0 +1,51 @@
+#Imageorigine::before
+{
+    content: '';
+    position: absolute;
+    inset: 0px 40px;
+    background:linear-gradient(to top,#11acf4,white) ;
+    animation: circle 3s linear 0s infinite ;
+    z-index: -1;
+}
+
+@keyframes circle {
+    
+    0%{
+        rotate:0deg;
+    }
+    100%{
+        rotate:360deg;
+    }
+}
+#Imageorigine::after
+{
+    content: '';
+    inset: 4px;
+    position: absolute;
+    background: #081B28;
+    z-index: 2;
+    border-radius: inherit;
+}
+#Imageorigine #image
+{
+    height: 90%;
+    width: 90%;
+    background: #02293A;
+    z-index: 10;
+    border-radius: inherit;
+  overflow: hidden;
+  
+}
+#image img{
+  
+}
+#Show
+{
+    z-index: 100;
+}
+#pera
+{
+    max-height: 40vh;
+    overflow-y: auto;
+    
+}
